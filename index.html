@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Movies</title>
+    <link rel="shortcut icon" href="img/kisspng-movie-projector-cinema-computer-icons-film-multimedia-projectors-5b231a501aca86.0077674715290271521098.png" type="image/png">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header__inner">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" onmousedown="bleep.play()"><img src="img/kisspng-movie-projector-cinema-computer-icons-film-multimedia-projectors-5b231a501aca86.0077674715290271521098.png" width="40" height="30" alt="iconca"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onmousedown="bleep.play()">PREMIERES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onmousedown="bleep.play()">ALL MOVIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#part1" onmousedown="bleep.play()">CONTACTS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" onmousedown="bleep.play()">
+                  GENRES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Comedy</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Horrors</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Detectives</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Аction</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Fantasy</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Thrillers </a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Dramas</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Romance</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Sport</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">History</a></li>
+                  <li><a class="dropdown-item" href="#" onmousedown="bleep.play()">Sci-Fi</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn " type="submit" onmousedown="bleep.play()">Search</button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;margin-left: 30px;border-radius: 30px; background-color:#20282f;color:#20282f;"><a class="nav-link" href="#" onmousedown="bleep.play()">Log in</a>
+              </li></button>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html" onmousedown="bleep.play()" >Sign up</a>
+            </ul>
+            </li>
+            <div id="id01" class="modal">
+  
+              <form class="modal-content animate" action="../action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Type Your Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Type Your Password" name="psw" required>
+                    
+                  <button type="submit" class="btnn" onmousedown="bleep.play()" >LOGIN</button>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" onmousedown="bleep.play()">Cancel</button>
+                  <span class="psw">Forgot <a href="#" style="text-decoration:none;color:#20282f">password?</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+<!-- Карусель-Банер -->
+<section class="section">
+<div class="container-sm">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/last-duel.jpg" class="d-block "style="width:85%;height=:85%; margin-right: auto; margin-left: auto;border-radius: 10% / 50%;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <a class="banner-title" href="#"><h2>Last Duel</h2></a>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/the_card_counter2.jpg" class="d-block " style="width:85%;height:85%; margin-right: auto; margin-left: auto;border-radius: 10% / 50%;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <a class="banner-title" href="#"><h2>The Card Counter</h2></a>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/no_sudden_move.jpg" class="d-block " style="width:85%;height:85%; margin-right: auto; margin-left: auto;border-radius: 10% / 50%;" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <a class="banner-title" href="#"><h2>No Sudden Move</h2></a>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" onmousedown="bleep.play()"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true" onmousedown="bleep.play()"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</section>
+
+<!-- Carousel-Popular Movies -->
+<section class="section">
+  <div class="container-sm">
+
+    <div class="section_header">
+      <a href="PopularMovies.html" style="text-decoration: none;"><h1 class="section_title">Popular Movies</h1></a>
+
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-between">
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/ghostbusters.jpg" class="card-img-top" alt="Ghostbusters: Afterlife">
+                <div class="card-body">
+                  <h5 class="card-title">Ghostbusters: Afterlife</h5>
+                  <p class="card-text">2021, Comedies, Action movies, Fiction, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/KingRichard.jpg" class="card-img-top" alt="King Richard">
+                <div class="card-body">
+                  <h5 class="card-title">King Richard</h5>
+                  <p class="card-text">2021, Sports, Drama, Biography, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/BlackAndBlue.jpg" class="card-img-top" alt="BlackAndBlue">
+                <div class="card-body">
+                  <h5 class="card-title">Black and Blue</h5>
+                  <p class="card-text">2019, Action movies, Thriller, Crime, Drama, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/Oslo.jpg" class="card-img-top" alt="Oslo">
+                <div class="card-body">
+                  <h5 class="card-title">Oslo</h5>
+                  <p class="card-text">2021, Drama, Foreign, USA <br> </br> </p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-between">
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/ghostbusters.jpg" class="card-img-top" alt="Ghostbusters: Afterlife">
+                <div class="card-body">
+                  <h5 class="card-title">Ghostbusters: Afterlife</h5>
+                  <p class="card-text">2021, Comedies, Action movies, Fiction, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/KingRichard.jpg" class="card-img-top" alt="King Richard">
+                <div class="card-body">
+                  <h5 class="card-title">King Richard</h5>
+                  <p class="card-text">2021, Sports, Drama, Biography, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/BlackAndBlue.jpg" class="card-img-top" alt="BlackAndBlue">
+                <div class="card-body">
+                  <h5 class="card-title">Black and Blue</h5>
+                  <p class="card-text">2019, Action movies, Thriller, Crime, Drama, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/Oslo.jpg" class="card-img-top" alt="Oslo">
+                <div class="card-body">
+                  <h5 class="card-title">Oslo</h5>
+                  <p class="card-text">2021, Drama, Foreign, USA <br> </br> </p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-between">
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/ghostbusters.jpg" class="card-img-top" alt="Ghostbusters: Afterlife">
+                <div class="card-body">
+                  <h5 class="card-title">Ghostbusters: Afterlife</h5>
+                  <p class="card-text">2021, Comedies, Action movies, Fiction, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/KingRichard.jpg" class="card-img-top" alt="King Richard">
+                <div class="card-body">
+                  <h5 class="card-title">King Richard</h5>
+                  <p class="card-text">2021, Sports, Drama, Biography, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/BlackAndBlue.jpg" class="card-img-top" alt="BlackAndBlue">
+                <div class="card-body">
+                  <h5 class="card-title">Black and Blue</h5>
+                  <p class="card-text">2019, Action movies, Thriller, Crime, Drama, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/Oslo.jpg" class="card-img-top" alt="Oslo">
+                <div class="card-body">
+                  <h5 class="card-title">Oslo</h5>
+                  <p class="card-text">2021, Drama, Foreign, USA <br> </br> </p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" onmousedown="bleep.play()"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" onmousedown="bleep.play()"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Carousel-Popular Cartoons -->
+<section class="section">
+  <div class="container-sm">
+
+    <div class="section_header">
+      <h1 class="section_title">Popular Cartoons</h1>
+
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-between">
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/ghostbusters.jpg" class="card-img-top" alt="Ghostbusters: Afterlife">
+                <div class="card-body">
+                  <h5 class="card-title">Ghostbusters: Afterlife</h5>
+                  <p class="card-text">2021, Comedies, Action movies, Fiction, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/KingRichard.jpg" class="card-img-top" alt="King Richard">
+                <div class="card-body">
+                  <h5 class="card-title">King Richard</h5>
+                  <p class="card-text">2021, Sports, Drama, Biography, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/BlackAndBlue.jpg" class="card-img-top" alt="BlackAndBlue">
+                <div class="card-body">
+                  <h5 class="card-title">Black and Blue</h5>
+                  <p class="card-text">2019, Action movies, Thriller, Crime, Drama, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/Oslo.jpg" class="card-img-top" alt="Oslo">
+                <div class="card-body">
+                  <h5 class="card-title">Oslo</h5>
+                  <p class="card-text">2021, Drama, Foreign, USA <br> </br> </p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-between">
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/ghostbusters.jpg" class="card-img-top" alt="Ghostbusters: Afterlife">
+                <div class="card-body">
+                  <h5 class="card-title">Ghostbusters: Afterlife</h5>
+                  <p class="card-text">2021, Comedies, Action movies, Fiction, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/KingRichard.jpg" class="card-img-top" alt="King Richard">
+                <div class="card-body">
+                  <h5 class="card-title">King Richard</h5>
+                  <p class="card-text">2021, Sports, Drama, Biography, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/BlackAndBlue.jpg" class="card-img-top" alt="BlackAndBlue">
+                <div class="card-body">
+                  <h5 class="card-title">Black and Blue</h5>
+                  <p class="card-text">2019, Action movies, Thriller, Crime, Drama, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/Oslo.jpg" class="card-img-top" alt="Oslo">
+                <div class="card-body">
+                  <h5 class="card-title">Oslo</h5>
+                  <p class="card-text">2021, Drama, Foreign, USA <br> </br> </p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-between">
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/ghostbusters.jpg" class="card-img-top" alt="Ghostbusters: Afterlife">
+                <div class="card-body">
+                  <h5 class="card-title">Ghostbusters: Afterlife</h5>
+                  <p class="card-text">2021, Comedies, Action movies, Fiction, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/KingRichard.jpg" class="card-img-top" alt="King Richard">
+                <div class="card-body">
+                  <h5 class="card-title">King Richard</h5>
+                  <p class="card-text">2021, Sports, Drama, Biography, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/BlackAndBlue.jpg" class="card-img-top" alt="BlackAndBlue">
+                <div class="card-body">
+                  <h5 class="card-title">Black and Blue</h5>
+                  <p class="card-text">2019, Action movies, Thriller, Crime, Drama, Foreign, USA</p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-100">
+                <img src="img/Oslo.jpg" class="card-img-top" alt="Oslo">
+                <div class="card-body">
+                  <h5 class="card-title">Oslo</h5>
+                  <p class="card-text">2021, Drama, Foreign, USA <br> </br> </p>
+                  <a href="#" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" onmousedown="bleep.play()"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" onmousedown="bleep.play()"></span>w
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <ul class="socials">
+      <li><a href="#" onmousedown="bleep.play()"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></a></li>
+      <li><a href="#" onmousedown="bleep.play()"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" /></a></li>
+      <li><a href="https://t.me/httpslvcifer" onmousedown="bleep.play()"><img src="https://img.icons8.com/color/48/000000/telegram-app--v1.png" /></a></li>
+      <li><a href="#" onmousedown="bleep.play()"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" /></a></li>
+      <li><a href="
+        212037@astanait.edu.kz" onmousedown="bleep.play()"><img src="https://img.icons8.com/fluency/48/000000/email-open.png" /></a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <article id="part1"></a><p> designed by <b>Zholkobaev Daniyar</b></p></article>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
